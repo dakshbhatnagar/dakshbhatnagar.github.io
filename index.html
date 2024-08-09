@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daksh Bhatnagar | Data Analyst</title>
     <style>
+        /* General Styling */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f7fa;
+            font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+            background-color: #e1e3e5;
             color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 30px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
             background-color: #ffffff;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
         h1 {
             font-size: 2.5em;
+            font-weight: 700;
             color: #2c3e50;
             text-align: center;
         }
         h2 {
-            color: #34495e;
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #2980b9;
             border-bottom: 2px solid #2980b9;
             padding-bottom: 5px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         p {
             font-size: 1.1em;
@@ -42,6 +46,7 @@
             font-weight: bold;
         }
         a:hover {
+            color: #1a73e8;
             text-decoration: underline;
         }
         ul {
@@ -49,29 +54,29 @@
             padding-left: 0;
         }
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             position: relative;
-            padding-left: 25px;
+            padding-left: 30px;
         }
         ul li:before {
-            content: '•';
+            content: '✔';
+            color: #2980b9;
+            font-size: 1.2em;
             position: absolute;
             left: 0;
-            color: #2980b9;
-            font-size: 1.5em;
             top: -2px;
         }
         .highlight {
-            background-color: #ecf0f1;
+            background-color: #e9eff5;
             border-left: 5px solid #2980b9;
-            padding: 10px;
+            padding: 15px;
             margin-bottom: 20px;
         }
         hr {
             border: 0;
             height: 1px;
             background-color: #ecf0f1;
-            margin: 30px 0;
+            margin: 40px 0;
         }
         .contact-info {
             text-align: center;
@@ -81,6 +86,19 @@
             margin: 0 10px;
             font-size: 1.2em;
         }
+        /* Two Column Layout for Skills */
+        .skills-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        .skills-columns div {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .skills-columns div:last-child {
+            padding-right: 0;
+        }
+        /* Responsive Design */
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -88,40 +106,55 @@
             h1 {
                 font-size: 2em;
             }
+            .skills-columns {
+                flex-direction: column;
+            }
+            .skills-columns div {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>👨‍💼 Daksh Bhatnagar</h1>
-        <p class="highlight">Data Analyst with 1.5+ years of experience based in New Delhi, actively seeking new challenges to help businesses solve problems with data.</p>
+        <p>Result-oriented Data Analyst based in New Delhi with 1.5+ years of experience, actively seeking new challenges to help businesses solve problems with data.</p>
 
         <hr>
         <h2>🔍 Summary</h2>
         <ul>
-            <li>Strong technical background in Google Sheets, MS Excel, Tableau, Looker Studio, SQL, Python, and Google AppScript.</li>
-            <li>Deep understanding of data analysis principles and methodologies.</li>
-            <li>Effective communicator, presenting findings clearly to both technical and non-technical audiences.</li>
+            <li><strong>Solid technical expertise</strong> across various tools used in Data Analytics.</li>
+            <li><strong>Collaborative and adaptable</strong>, capable of working effectively with diverse teams to deliver results on time.</li>
+            <li><strong>Quick learner</strong> who embraces mistakes as opportunities for growth, iterating rapidly to provide effective solutions.</li>
         </ul>
 
         <hr>
         <h2>🛠️ Skills</h2>
-        <ul>
-            <li><strong>Databases</strong> - MySQL, SQLite3</li>
-            <li> <strong>Programming</strong> - Python, Google AppScript</li>
-            <li><strong>Spreadsheets</strong> - MS Excel, Google Sheets</li>
-            <li><strong>BI Tools</strong> - Looker Studio, Tableau</li>
-        </ul>
+        <div class="skills-columns">
+            <div>
+                <ul>
+                    <li><strong>Databases</strong> - MySQL, SQLite3</li>
+                    <li><strong>Programming</strong> - Python, Google AppScript</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Spreadsheets</strong> - MS Excel, Google Sheets</li>
+                    <li><strong>BI Tools</strong> - Looker Studio, Tableau</li>
+                </ul>
+            </div>
+        </div>
 
         <hr>
         <h2>👨‍💻 Experience</h2>
         <ul>
             <li>Developed <strong>real-time data pipelines</strong> using Google Sheets, increasing data availability and decision-making efficiency by 20%.</li>
-            <li>Created engaging visualizations in Looker Studio, improving data accessibility by 15%.</li>
+            <li>Created <strong>engaging visualizations</strong> in Looker Studio, improving data accessibility by 15%.</li>
             <li><strong>Reduced subscription costs</strong> by 68,000 INR per month through job portal monitoring, saving 816,000 INR annually.</li>
-            <li><strong>Automated reporting processes</strong> using Google AppScript and Python, boosting operational efficiency by 30%.</li>
+            <li><strong>Automated reporting processes</strong> using Google AppScript and Python, improving operational efficiency and reporting frequency by 30%.</li>
             <li>Streamlined <strong>appraisal document creation</strong> with AppScript, organizing them for team distribution.</li>
-            <li>Used SQL within Python to connect with the Google Sheets API, <strong>calculating incentives for Recruiters, Team Leaders, and Account Managers</strong> monthly and quarterly.</li>
+            <li>Used SQL within Python to connect with the Google Sheets API, <strong>calculating incentives</strong> for Recruiters, Team Leaders, and Account Managers monthly and quarterly.</li>
         </ul>
 
         <hr>
@@ -133,11 +166,11 @@
             <li>Super Store Insights Using Google Sheets: <a href="https://docs.google.com/spreadsheets/d/14h0UCZOhi1nQx7oT7DY8SYmqp3S0Y5UssEjkGAuVgXo/edit#gid=312503756">Explore analysis</a></li>
         </ul>
 
-        <hr>
+        
         <h2>📧 Contact</h2>
         <div class="contact-info">
             <a href="https://www.linkedin.com/in/dakshb/">LinkedIn</a> | 
-            <a href="mailto:bhatnagar91@gmail.com">Email: bhatnagar91@gmail.com</a>
+            <span> Email: </span><a href="mailto:bhatnagar91@gmail.com">bhatnagar91@gmail.com</a>
         </div>
     </div>
 </body>
