@@ -5,36 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daksh Bhatnagar | Data Analyst</title>
     <style>
-        /* General Styling */
         body {
-            font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
-            background-color: #e1e3e5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
             color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             max-width: 900px;
             margin: 40px auto;
-            padding: 40px;
+            padding: 30px;
             background-color: #ffffff;
             border-radius: 10px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h1 {
             font-size: 2.5em;
-            font-weight: 700;
             color: #2c3e50;
-            text-align: center;
         }
         h2 {
-            font-size: 1.8em;
-            font-weight: 600;
-            color: #2980b9;
+            color: #34495e;
             border-bottom: 2px solid #2980b9;
             padding-bottom: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        /* Remove the border-bottom for the specific section */
+        h2.no-border {
+            border-bottom: none;
         }
         p {
             font-size: 1.1em;
@@ -46,37 +51,37 @@
             font-weight: bold;
         }
         a:hover {
-            color: #1a73e8;
             text-decoration: underline;
         }
         ul {
             list-style-type: none;
             padding-left: 0;
+            text-align: left;
         }
         ul li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             position: relative;
-            padding-left: 30px;
+            padding-left: 25px;
         }
         ul li:before {
-            content: '✔';
-            color: #2980b9;
-            font-size: 1.2em;
+            content: '•';
             position: absolute;
             left: 0;
+            color: #2980b9;
+            font-size: 1.5em;
             top: -2px;
         }
         .highlight {
-            background-color: #e9eff5;
+            background-color: #ecf0f1;
             border-left: 5px solid #2980b9;
-            padding: 15px;
+            padding: 5px;
             margin-bottom: 20px;
         }
         hr {
             border: 0;
             height: 1px;
             background-color: #ecf0f1;
-            margin: 40px 0;
+            margin: 30px 0;
         }
         .contact-info {
             text-align: center;
@@ -86,19 +91,20 @@
             margin: 0 10px;
             font-size: 1.2em;
         }
-        /* Two Column Layout for Skills */
-        .skills-columns {
-            display: flex;
-            justify-content: space-between;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #2980b9;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-        .skills-columns div {
-            flex: 1;
-            padding-right: 20px;
+        .button:hover {
+            background-color: #1f6391;
         }
-        .skills-columns div:last-child {
-            padding-right: 0;
-        }
-        /* Responsive Design */
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -106,47 +112,41 @@
             h1 {
                 font-size: 2em;
             }
-            .skills-columns {
-                flex-direction: column;
-            }
-            .skills-columns div {
-                padding-right: 0;
-                margin-bottom: 20px;
-            }
+        }
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+        .skills ul {
+            width: 45%;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>👨‍💼 Daksh Bhatnagar</h1>
-        <p>Result-oriented Data Analyst based in New Delhi with 1.5+ years of experience, actively seeking new challenges to help businesses solve problems with data.</p>
+        <h2 class="no-border"> Data Analyst | BI Analyst | Reporting Analyst</h2>
 
-        <hr>
         <h2>🔍 Summary</h2>
         <ul>
-            <li><strong>Solid technical expertise</strong> across various tools used in Data Analytics.</li>
-            <li><strong>Collaborative and adaptable</strong>, capable of working effectively with diverse teams to deliver results on time.</li>
-            <li><strong>Quick learner</strong> who embraces mistakes as opportunities for growth, iterating rapidly to provide effective solutions.</li>
+            <li>I specialize in helping businesses unlock valuable insights through data analysis and reporting.</li>
+            <li>My work focuses on <span class="highlight">delivering actionable insights</span> that drive informed decisions and implementing automated reporting solutions that save time and reduce costs.</li>
+            <li>With a deep understanding of analytics tools, I’ve spent countless hours <span class="highlight">optimizing processes</span>, <span class="highlight">enhancing data accessibility</span>, and improving overall efficiency.</li>
         </ul>
 
-        <hr>
-        <h2>🛠️ Skills</h2>
-        <div class="skills-columns">
-            <div>
-                <ul>
-                    <li><strong>Databases</strong> - MySQL, SQLite3</li>
-                    <li><strong>Programming</strong> - Python, Google AppScript</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><strong>Spreadsheets</strong> - MS Excel, Google Sheets</li>
-                    <li><strong>BI Tools</strong> - Looker Studio, Tableau</li>
-                </ul>
-            </div>
+        <h2 >🛠️ Skills</h2>
+        <div class="skills">
+            <ul>
+                <li><strong>Databases:</strong> MySQL, SQLite3</li>
+                <li><strong>Programming:</strong> Python, Pandas, Numpy, Matplotlib, Google AppScript</li>
+            </ul>
+            <ul>
+                <li><strong>Spreadsheets:</strong> MS Excel, Google Sheets</li>
+                <li><strong>BI Tools:</strong> Looker Studio, Tableau</li>
+            </ul>
         </div>
 
-        <hr>
         <h2>👨‍💻 Experience</h2>
         <ul>
             <li>Developed <strong>real-time data pipelines</strong> using Google Sheets, increasing data availability and decision-making efficiency by 20%.</li>
@@ -157,7 +157,6 @@
             <li>Used SQL within Python to connect with the Google Sheets API, <strong>calculating incentives</strong> for Recruiters, Team Leaders, and Account Managers monthly and quarterly.</li>
         </ul>
 
-        <hr>
         <h2>📈 Recent Projects</h2>
         <ul>
             <li>Tableau Tales Covering Vizzes with Digital Payment Trend and COVID-19: <a href="https://public.tableau.com/app/profile/daksh.bhatnagar">View visualizations</a></li>
@@ -166,11 +165,11 @@
             <li>Super Store Insights Using Google Sheets: <a href="https://docs.google.com/spreadsheets/d/14h0UCZOhi1nQx7oT7DY8SYmqp3S0Y5UssEjkGAuVgXo/edit#gid=312503756">Explore analysis</a></li>
         </ul>
 
-        
         <h2>📧 Contact</h2>
         <div class="contact-info">
-            <a href="https://www.linkedin.com/in/dakshb/">LinkedIn</a> | 
-            <span> Email: </span><a href="mailto:bhatnagar91@gmail.com">bhatnagar91@gmail.com</a>
+            <a href="https://www.linkedin.com/in/dakshb/" class="button">LinkedIn</a>
+            <a href="mailto:bhatnagar91@gmail.com" class="button">Email Me</a>
+            <a href="https://drive.google.com/file/d/1M2PYWuYh-p8yFBJ5ta00iKHO1tDZieJy/view?usp=share_link" class="button">Download Resume</a>
         </div>
     </div>
 </body>
