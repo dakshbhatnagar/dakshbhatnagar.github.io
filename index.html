@@ -1,141 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daksh Bhatnagar | Data Analyst</title>
+    <!-- Adding Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7fa;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(120deg, #f4f7fa, #e2ebf0);
             color: #333;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             min-height: 100vh;
         }
+
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 20px;
             padding: 30px;
             background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             color: #2c3e50;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 5px;
         }
+
         h2 {
-            color: #34495e;
+            color: #2980b9;
             border-bottom: 2px solid #2980b9;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-family: 'Poppins', sans-serif;
         }
-        /* Remove the border-bottom for the specific section */
+
+        /* Remove the border-bottom for specific sections */
         h2.no-border {
             border-bottom: none;
         }
-        p {
+
+        p,
+        ul {
             font-size: 1.1em;
             margin-bottom: 20px;
+            line-height: 1.6;
         }
+
         a {
             color: #2980b9;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         ul {
             list-style-type: none;
             padding-left: 0;
             text-align: left;
+            margin: 0 auto;
         }
+
         ul li {
             margin-bottom: 10px;
             position: relative;
-            padding-left: 25px;
+            padding-left: 30px;
         }
+
         ul li:before {
-            content: '•';
+            content: '\f0da';
+            /* Font Awesome arrow icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             position: absolute;
             left: 0;
             color: #2980b9;
-            font-size: 1.5em;
-            top: -2px;
+            font-size: 1.2em;
+            top: 0;
         }
+
         .highlight {
             background-color: #ecf0f1;
             border-left: 5px solid #2980b9;
-            padding: 5px;
+            padding: 3px;
             margin-bottom: 20px;
         }
+
         hr {
             border: 0;
             height: 1px;
             background-color: #ecf0f1;
             margin: 30px 0;
         }
+
         .contact-info {
             text-align: center;
+            margin-top: 20px;
         }
+
         .contact-info a {
             display: inline-block;
             margin: 0 10px;
             font-size: 1.2em;
-        }
-        .button {
-            display: inline-block;
             padding: 10px 20px;
-            margin: 10px;
-            font-size: 1em;
             color: #fff;
             background-color: #2980b9;
-            border-radius: 5px;
+            border-radius: 25px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
-        .button:hover {
+
+        .contact-info a:hover {
             background-color: #1f6391;
+            transform: scale(1.05);
         }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
             }
+
             h1 {
-                font-size: 2em;
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .skills {
+                flex-direction: column;
+            }
+
+            .skills ul {
+                width: 100%;
+                margin-bottom: 20px;
             }
         }
+
         .skills {
             display: flex;
             justify-content: space-between;
             text-align: left;
+            margin-bottom: 20px;
         }
+
         .skills ul {
             width: 45%;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>👨‍💼 Daksh Bhatnagar</h1>
-        <h2 class="no-border"> Data Analyst | BI Analyst | Reporting Analyst</h2>
+        <h2 class="no-border">Data Analyst | BI Analyst | Reporting Analyst</h2>
 
         <h2>🔍 Summary</h2>
         <ul>
             <li>I specialize in helping businesses unlock valuable insights through data analysis and reporting.</li>
-            <li>My work focuses on <span class="highlight">delivering actionable insights</span> that drive informed decisions and implementing automated reporting solutions that save time and reduce costs.</li>
-            <li>With a deep understanding of analytics tools, I’ve spent countless hours <span class="highlight">optimizing processes</span>, <span class="highlight">enhancing data accessibility</span>, and improving overall efficiency.</li>
+            <li>My work focuses on <span class="highlight">delivering actionable insights</span> that drive informed
+                decisions and implementing automated reporting solutions that save time and reduce costs.</li>
+            <li>With a deep understanding of analytics tools, I’ve spent countless hours <span
+                    class="highlight">optimizing processes</span>, <span class="highlight">enhancing data
+                    accessibility</span>, and improving overall efficiency.</li>
         </ul>
 
-        <h2 >🛠️ Skills</h2>
+        <h2>🛠️ Skills</h2>
         <div class="skills">
             <ul>
                 <li><strong>Databases:</strong> MySQL, SQLite3</li>
@@ -149,28 +199,42 @@
 
         <h2>👨‍💻 Experience</h2>
         <ul>
-            <li>Developed <strong>real-time data pipelines</strong> using Google Sheets, increasing data availability and decision-making efficiency by 20%.</li>
-            <li>Created <strong>engaging visualizations</strong> in Looker Studio, improving data accessibility by 15%.</li>
-            <li><strong>Reduced subscription costs</strong> by 68,000 INR per month through job portal monitoring, saving 816,000 INR annually.</li>
-            <li><strong>Automated reporting processes</strong> using Google AppScript and Python, improving operational efficiency and reporting frequency by 30%.</li>
-            <li>Streamlined <strong>appraisal document creation</strong> with AppScript, organizing them for team distribution.</li>
-            <li>Used SQL within Python to connect with the Google Sheets API, <strong>calculating incentives</strong> for Recruiters, Team Leaders, and Account Managers monthly and quarterly.</li>
+            <li>Developed <strong>real-time data pipelines</strong> using Google Sheets, increasing data availability
+                and decision-making efficiency by 20%.</li>
+            <li>Created <strong>engaging visualizations</strong> in Looker Studio, improving data accessibility by 15%.
+            </li>
+            <li><strong>Reduced subscription costs</strong> by 68,000 INR per month through job portal monitoring,
+                saving 816,000 INR annually.</li>
+            <li><strong>Automated reporting processes</strong> using Google AppScript and Python, improving operational
+                efficiency and reporting frequency by 30%.</li>
+            <li>Streamlined <strong>appraisal document creation</strong> with AppScript, organizing them for team
+                distribution.</li>
+            <li>Used SQL within Python to connect with the Google Sheets API, <strong>calculating incentives</strong>
+                for Recruiters, Team Leaders, and Account Managers monthly and quarterly.</li>
         </ul>
 
         <h2>📈 Recent Projects</h2>
         <ul>
-            <li>Tableau Tales Covering Vizzes with Digital Payment Trend and COVID-19: <a href="https://public.tableau.com/app/profile/daksh.bhatnagar">View visualizations</a></li>
-            <li>Sales Conversion Maximization in Travel Industry using Looker Studio:<a href="https://lookerstudio.google.com/reporting/cc4ee68d-2634-4110-8652-811626ea9b05/page/p_4qnx3lohhd">Dashboard link</a></li>    
-            <li><strong>Analyzed HR data using SQL and Python:</strong> Uncovered insights about job distribution and salaries. <a href="https://github.com/dakshbhatnagar/SQLProjects/tree/main/HRData">View Project</a></li>
-            <li>Super Store Insights Using Google Sheets: <a href="https://docs.google.com/spreadsheets/d/14h0UCZOhi1nQx7oT7DY8SYmqp3S0Y5UssEjkGAuVgXo/edit#gid=312503756">Explore analysis</a></li>
+            <li>Tableau Tales Covering Vizzes with Digital Payment Trend and COVID-19: <a
+                    href="https://public.tableau.com/app/profile/daksh.bhatnagar">View visualizations</a></li>
+            <li>Sales Conversion Maximization in Travel Industry using Looker Studio: <a
+                    href="https://lookerstudio.google.com/reporting/cc4ee68d-2634-4110-8652-811626ea9b05/page/p_4qnx3lohhd">Dashboard
+                    link</a></li>
+            <li><strong>Analyzed HR data using SQL and Python:</strong> Uncovered insights about job distribution and
+                salaries. <a href="https://github.com/dakshbhatnagar/SQLProjects/tree/main/HRData">View Project</a></li>
+            <li>Super Store Insights Using Google Sheets: <a
+                    href="https://docs.google.com/spreadsheets/d/14h0UCZOhi1nQx7oT7DY8SYmqp3S0Y5UssEjkGAuVgXo/edit#gid=312503756">Explore
+                    analysis</a></li>
         </ul>
 
         <h2>📧 Contact</h2>
         <div class="contact-info">
-            <a href="https://www.linkedin.com/in/dakshb/" class="button">LinkedIn</a>
-            <a href="mailto:bhatnagar91@gmail.com" class="button">Email Me</a>
-            <a href="https://drive.google.com/file/d/1M2PYWuYh-p8yFBJ5ta00iKHO1tDZieJy/view?usp=share_link" class="button">Download Resume</a>
+            <a href="https://www.linkedin.com/in/dakshb/" class="button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:bhatnagar91@gmail.com" class="button"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="https://drive.google.com/file/d/1M2PYWuYh-p8yFBJ5ta00iKHO1tDZieJy/view?usp=share_link"
+                class="button"><i class="fas fa-download"></i> Download Resume</a>
         </div>
-    </div>
+
 </body>
+
 </html>
