@@ -309,6 +309,9 @@
       color: inherit;
       text-decoration: underline;
       transition: color 0.25s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
     }
 
     a[onclick]:not([href]) {
@@ -519,14 +522,15 @@
     p {
       direction: var(--site-language-direction);
       position: relative;
+
     }
 
     h1 span.p,
     h2 span.p,
     h3 span.p,
     p span.p {
-      display: block;
       position: relative;
+      display: inline
     }
 
     h1 span[style],
@@ -567,11 +571,20 @@
       font-weight: 300;
     }
 
+    .style3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      /* adjust the value as needed */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
     h1.style1 a,
     h2.style1 a,
     h3.style1 a,
     p.style1 a {
       text-decoration: underline;
+      display: inline
     }
 
     h1.style1 a:hover,
@@ -597,6 +610,7 @@
       font-size: 1em;
       line-height: 1.625;
       font-weight: 400;
+
     }
 
     h1.style3 a,
@@ -618,6 +632,7 @@
     p.style3:hover {
       color: #E6BCB3;
       font-weight: bold;
+      transition: 0.2s ease-in-out;
     }
 
     h1.style3 span.p:nth-child(n + 2),
@@ -651,10 +666,13 @@
       transform: scale(1.2);
       transform-origin: left;
       font-weight: bold;
-      transition: 0.2s ease-in-out
+      transition: 0.1s ease-in-out
     }
 
-    ;
+    .project-link {
+      display: inline;
+    }
+
 
     h3.style2 a:hover,
     p.style2 a:hover {
@@ -670,11 +688,9 @@
 
     .buttons {
       cursor: default;
-      display: inline-block;
+      display: flex;
       text-align: center;
-      /* Center alignment */
-      letter-spacing: 0;
-      padding: 0;
+      justify-content: center
     }
 
     .buttons li {
@@ -1534,20 +1550,8 @@
               </center>
 
               <center>
-                <h2 id="text04" class="style2">Data Analyst | BI Analyst | Reporting Analyst </h1>
+                <h2 id="text04" class="style3">Data Analyst | Reporting Analyst </h2>
               </center>
-
-              <ul id="buttons01" class="style1 buttons">
-                <li>
-                  <a href="mailto:bhatnagar91@gmail.com" class="button n01">
-                    <svg aria-labelledby="icon-title">
-                      <title id="icon-title">Email</title>
-                      <use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use>
-                    </svg>
-                    <span class="label">Email</span>
-                  </a>
-                </li>
-              </ul>
 
               <ul id="buttons01" class="style1 buttons">
                 <li>
@@ -1557,7 +1561,7 @@
                       <title id="icon-title">Download</title>
                       <use xlink:href="#icon-descend"></use>
                     </svg>
-                    <span class="label">Resume</span>
+                    <span class="label">View Resume</span>
                   </a>
                 </li>
               </ul>
@@ -1571,13 +1575,16 @@
         <div id="container05" class="style1 container default">
           <div class="wrapper">
             <div class="inner">
-              <h2 id="text09" class="style2">SUMMARY</h2>
-              <p id="text04" class="style3">I specialize in helping businesses unlock valuable insights through data
+              <h2 id="text09" class="style2">About Me</h2>
+              <p id="text04" class="style3">Hi I'm Daksh and I am data analyst based out of New Delhi</p>
+              <p></p>
+              <p id="text04" class="style3">I am committed to helping businesses unlock valuable insights through data
                 analysis and reporting.</p>
               <p id="text04" class="style3">My work focuses on delivering actionable insights that drive informed
-                decisions and implementing automated reporting solutions that save time and reduce costs.</p>
-              <p id="text04" class="style3">With a sound understanding of analytics tools, I’ve spent countless hours
-                optimizing processes, enhancing data accessibility, and improving overall efficiency.</p>
+                decisions and implementing <strong>automated reporting solutions</strong> that save time and reduce
+                costs.</p>
+              <p id="text04" class="style3">I’ve spent many hours <strong>developing reports</strong> that save time and
+                money.</p>
 
             </div>
           </div>
@@ -1622,16 +1629,17 @@
 
               <ul id="links01" class="style1 links">
                 <li class="n01">
-                  <a href="https://github.com/dakshbhatnagar/projects">Python Projects</a>
+                  <p id="text04" class="style3">- <a href="https://github.com/dakshbhatnagar/projects"> Python
+                      Projects</a></p>
                 </li>
                 <li class="n02">
-                  <p id="text04" class="style3">Tableau Tales Covering Vizzes with Digital Payment Trend and COVID-19
+                  <p id="text04" class="style3">- Tableau Tales Covering Vizzes with Digital Payment Trend and COVID-19
                     on<a href="https://public.tableau.com/app/profile/daksh.bhatnagar/vizzes">Tableau Profile</a></p>
                 </li>
 
 
                 <li class="n02">
-                  <p id="text04" class="style3">Sales Conversion Maximization in Travel Industry using <a
+                  <p id="text04" class="style3">- Sales Conversion Maximization in Travel Industry using <a
                       href="https://lookerstudio.google.com/reporting/cc4ee68d-2634-4110-8652-811626ea9b05/page/p_4qnx3lohhd">Looker
                       Studio</a></p>
                 </li>
@@ -1641,9 +1649,11 @@
           </div>
         </div>
 
+
+
         <div class="wrapper">
           <div class="inner">
-            <h3 id="text11" class="style2">Socials</h3>
+            <h3 id="text11" class="style2">Contact Me</h3>
             <ul id="icons01" class="style1 icons">
               <li>
                 <a class="n01" href="https://www.linkedin.com/in/dakshb/">
@@ -1663,6 +1673,19 @@
                   <span class="label">Github</span>
                 </a>
               </li>
+
+              <li>
+                <a href="mailto:bhatnagar91@gmail.com" class="n04">
+                  <svg aria-labelledby="icon-title">
+                    <title id="icon-title">Email</title>
+                    <use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use>
+                  </svg>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+
+
+
             </ul>
           </div>
         </div>
