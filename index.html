@@ -61,7 +61,7 @@
     tt,
     var,
     b,
-    u,
+
     i,
     center,
     dl,
@@ -74,7 +74,6 @@
     form,
     label,
     legend,
-    table,
     caption,
     tbody,
     tfoot,
@@ -125,7 +124,7 @@
     }
 
     body {
-      line-height: 1;
+      line-height: 1.5;
     }
 
     ol,
@@ -144,11 +143,6 @@
     q:after {
       content: '';
       content: none;
-    }
-
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
     }
 
     body {
@@ -203,7 +197,10 @@
       z-index: 0;
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0.349),
           rgba(0, 0, 0, 0.349)),
-        url('https://images.pexels.com/photos/45987/pexels-photo-45987.jpeg?auto=compress&cs=tinysrgb&w=800');
+
+        url('https://c0.wallpaperflare.com/preview/95/156/837/abstract-art-atom-background.jpg');
+
+
       background-position: 0% 0%, center;
       background-repeat: repeat;
       background-size: cover;
@@ -249,7 +246,7 @@
     }
 
     u {
-      text-decoration: underline;
+      text-decoration: None;
     }
 
     strong {
@@ -790,7 +787,10 @@
 
     #text06 a:hover {
       text-decoration: none;
+      transform: scale(1.1);
+      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.5s ease;
     }
+
 
     #text06 span.p:nth-child(n + 2) {
       margin-top: 1rem;
@@ -817,15 +817,24 @@
     }
 
     #text08 {
-      color: #FFFFFF;
+      text-decoration: none;
+      color: #3391a6;
+      font-family: 'Roboto', monospace;
+      font-size: 0.75em;
+      line-height: 1.75;
+      font-weight: 400;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      margin-block: 1rem;
+    }
+
+    #text08 a {
+      color: #3391a6;
       font-family: 'Roboto', monospace;
       font-size: 1em;
       line-height: 1.75;
       font-weight: 400;
-    }
 
-    #text08 a {
-      text-decoration: underline;
     }
 
     #text08 a:hover {
@@ -839,7 +848,7 @@
     #text01 {
       color: #FFFFFF;
       font-family: 'Roboto', monospace;
-      font-size: 1.5em;
+      font-size: 1.25em;
       line-height: 1.375;
       font-weight: 400;
     }
@@ -885,7 +894,9 @@
     }
 
     #text02 a:hover {
-      color: #FF828A;
+      color: #28cacb;
+      transform: scale(1.1);
+      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.5s ease;
     }
 
     #text02 a {
@@ -923,6 +934,7 @@
       gap: 1.5rem;
       flex-direction: row;
       flex-wrap: wrap;
+
     }
 
     #buttons02:not(:first-child) {
@@ -948,22 +960,25 @@
       overflow: hidden;
       text-overflow: ellipsis;
       transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+
     }
 
     #buttons02 .button {
       color: #FFFFFF;
       border: solid 1px #FFFFFF;
+      float: right
     }
 
     #buttons02 .button:hover {
-      border-color: #FF828A !important;
-      color: #FF828A !important;
+      border-color: #28cacb !important;
+      color: #28cacb !important;
     }
 
     #buttons01 {
       gap: 1.5rem;
       flex-direction: row;
       flex-wrap: wrap;
+      padding: 0 0.25rem;
     }
 
     #buttons01:not(:first-child) {
@@ -988,7 +1003,7 @@
       direction: var(--site-language-direction);
       overflow: hidden;
       text-overflow: ellipsis;
-      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.5s ease;
     }
 
     #buttons01 .button {
@@ -997,8 +1012,9 @@
     }
 
     #buttons01 .button:hover {
-      border-color: #FF828A !important;
-      color: #FF828A !important;
+      border-color: #28cacb !important;
+      color: #28cacb !important;
+      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.5s ease;
     }
 
     #buttons04 {
@@ -1038,8 +1054,9 @@
     }
 
     #buttons04 .button:hover {
-      border-color: #FF828A !important;
-      color: #FF828A !important;
+      border-color: #28cacb !important;
+      color: #28cacb !important;
+      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.5s ease;
     }
 
     #buttons03 {
@@ -1079,12 +1096,13 @@
     }
 
     #buttons03 .button:hover {
-      border-color: #FF828A !important;
-      color: #FF828A !important;
+      border-color: #28cacb !important;
+      color: #28cacb !important;
     }
 
     #footer {
-      margin-top: 1.375rem !important;
+      margin-top: none !important;
+      height: 100px;
     }
 
     .gallery .inner {
@@ -1503,7 +1521,7 @@
     }
 
     #icons01 a:hover svg {
-      fill: #FF828A !important;
+      fill: #28cacb !important;
     }
 
     #icons01 li a+svg {
@@ -1727,6 +1745,11 @@
         line-height: 1.75;
       }
 
+      #text06:hover {
+        transform: translateY(-10px) scale(1.1);
+        transition: transform 0.3s ease-in-out, color 0.25s ease, background-color 0.25s ease, border-color 0.5s ease;
+      }
+
       #text07 {
         letter-spacing: 0rem;
         width: 100%;
@@ -1832,6 +1855,7 @@
 
       #footer {
         margin-top: 1.03125rem !important;
+        height: 60px;
       }
 
       .gallery-modal .close {
@@ -1889,6 +1913,7 @@
 
       #main>.inner>footer>.full:last-child {
         margin-bottom: -2.625rem !important;
+        height: 60px;
       }
 
       #main>.inner>.active>.full:first-child {
@@ -1905,10 +1930,6 @@
 
       #text05 {
         font-size: 1.5em;
-      }
-
-      #text06 {
-        font-size: 1em;
       }
 
       #text07 {
@@ -2030,10 +2051,11 @@
               <img src="assets/images/image02.jpg?v=759a496b" alt="" />
             </span>
           </div>
-          <header id="text03" style="color: #FF828A;">Daksh Bhatnagar</header>
+          <header id="text03" style="color: #28cacb;">Daksh Bhatnagar</header>
           <hr>
-          <p id="text04">Data-driven analyst turning complex insights into impactful strategies, with a knack
-            for automation and efficiency</p>
+          <p id="text02">Tangible results-driven Data Analyst with 2.5+ years of experience driving
+            business growth
+            in HR Consulting, Ed-tech & Fin-tech industry using data.</p>
           <ul id="buttons02" class="buttons">
             <li>
               <a href="#work" class="button n01" style="border-radius: 10px;">About Me</a>
@@ -2056,28 +2078,23 @@
               <a href="#home" class="button n01" style="border-radius: 10px;">Back</a>
             </li>
           </ul>
-          <header id="text05" style="color: #FF828A;">About Me</header>
+          <header id="text05" style="color: #28cacb;">About Me</header>
           <hr>
           <div id="image01" class="image">
-            <span class="frame deferred">
-              <img
-                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA3MjMgNDg2IiB3aWR0aD0iNzIzIiBoZWlnaHQ9IjQ4NiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0iIzg3YTBiNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D"
-                data-src="assets/images/image01.jpg?v=759a496b" alt="" />
-            </span>
           </div>
           <p id="text06">
             <span class="p" style="text-align: justify;">Hi, I’m Daksh Bhatnagar, a data analyst based out of New
-              Delhi with <span id="text05" style="color: #FF828A;">1.5+ years of experience</span> in analytics and a
+              Delhi with <span id="text05" style="color: #28cacb;">2.5+ years of experience</span> in analytics and a
               masters in finance. </span>
 
             <span class="p" style="text-align: justify;">I’m passionate about helping businesses uncover valuable
               insights through
               in-depth data analysis and clear reporting. My focus is on <span id="text05"
-                style="color: #FF828A;">delivering actionable insights</span>
+                style="color: #28cacb;">delivering actionable insights</span>
               that drive smarter decisions while implementing automated reporting solutions that save both
               time and costs.</span>
             <span class="p" style="text-align: justify;">Over the years, I’ve nurtured my skills in developing
-              dashboards and reports that <span id="text05" style="color: #FF828A;">enhance
+              dashboards and reports that <span id="text05" style="color: #28cacb;">enhance
                 efficiency and improve processes</span>, creating significant value for the
               organizations I work with.</span>
           </p>
@@ -2085,7 +2102,7 @@
           <ul id="buttons02" class="buttons" style="border-radius: 10px;">
             <li>
               <a href="https://drive.google.com/file/d/1BFJJV6CZ0rMiOiH5NQd90lBvHJdjvEDY/view?usp=sharing"
-                class="button n01" style="border-radius: 10px;">View Resume</a>
+                class="button n01" style="border-radius: 10px;">View resume</a>
             </li>
             <li>
               <a href="#about" class="button n02" style="border-radius: 10px;">Next</a>
@@ -2102,39 +2119,39 @@
             </li>
           </ul>
 
-          <header id="text07" style="color: #FF828A;">Projects</header>
+          <header id="text07" style="color: #28cacb;">Projects</header>
           <hr>
           <div id="gallery01" class="gallery">
             <p id="text06">
               <span class="p" style="text-align: justify;">
-                - Increased data accessibility by 15% by developing real-time data pipelines and and <span id="text06"
-                  style="color: #FF828A;">
-                  created impactful
-                  visualizations</span> in Looker Studio. Implemented validation of
-                data using Google Sheets, <span id="text06" style="color: #FF828A;">
-                  boosting data accuracy</span> and
-                decision-making efficiency by 20%</span>
+                - <span id="text06" style="color: #28cacb;">Enhanced data-driven decision-making by 20%</span> using
+                real-time data pipelines and Looker Studio
+                visualizations. Ensured data accuracy with Google Sheets.</span>
 
               <span class="p" style="text-align: justify;">
-                - <span id="text06" style="color: #FF828A;">Reduced job portal subscription costs</span> by 68,000
-                INR per month through job portal monitoring, saving 816,000 INR annually with the help of Google
-                Sheets and Google AppScript.</span>
+                - <span id="text06" style="color: #28cacb;">Saved 816,000 INR annually</span> by automating job portal
+                monitoring with Google Sheets and AppScript. Reduced costs by 68,000 INR per month.</span>
 
               <span class="p" style="text-align: justify;">
-                - <span id="text06" style="color: #FF828A;">Decreased manual intervention </span> of accounts' team that
-                freed up their time allowing them to focus on their core work. Achieved by
-                automating calculation of incentives for various team members to be sent out every month & quarter
-                leveraging
-                Google Sheets API in Python. </span>
+                - Automated incentive calculations using Google Sheets API, SQL, and Python. Increased aacounts' team
+                efficiency
+                and freed up their time for more important tasks. Also, Automated appraisal document creation using
+                Google Sheets and AppScript.
+                <span id="text06" style="color: #28cacb;">This saved team's 10-12 hours a week.</span></span>
 
               <span class="p" style="text-align: justify;">
-                - Also, <span id="text06" style="color: #FF828A;">streamlined appraisal document creation </span>
-                using
-                Google Sheets formulae to calculate targets achieved and
-                create word file and store them in folders team wise using Google AppScript for easier data access and
-                enhanced readability reducing the
-                manual
-                workload by 10-12 hours a week.</span>
+                - Developed a Convolution Neural Network model using transfer learning to <span id="text06"
+                  style="color: #28cacb;">classify
+                  satellite images into land types to increase model accuracy by 15% accuracy.</span>
+
+
+                <span class="p" style="text-align: justify;">
+                  - Delivered a machine learning project to <span id="text06" style="color: #28cacb;">predict customer
+                    churn within 3 days</span>. Tuned the model to increase accuracy by 10%, analyzing and feature
+                  engineering a 10,000-row
+                  dataset. This assisted a US-based university student in achieving a B+ grade
+                </span>
+
             </p>
 
 
@@ -2152,25 +2169,25 @@
             </li>
           </ul>
 
-          <header id="text07" style="color: #FF828A;">Skills</header>
+          <header id="text07" style="color: #28cacb;">Skills</header>
           <hr>
           <div id="gallery01" class="gallery">
 
             <p id="text06">
               <li class="p" id="text06">Programming - <a href="https://github.com/dakshbhatnagar/projects"><span
-                    id="text06" style="color: #FF828A;">Python</span></a> (Pandas, Numpy, Seaborn, Matplotlib) and
+                    id="text06" style="color: #28cacb;">Python</span></a> (Pandas, Numpy, Seaborn, Matplotlib) and
                 <a
                   href="https://script.google.com/home/projects/1BlweW8e_LL9qsqH551LUVVj6kIwjHnmspj0uEurKgfQQFAy-C0pYOf2z/edit"><span
-                    id="text06" style="color: #FF828A;">Google AppScript</span></a>
+                    id="text06" style="color: #28cacb;">Google AppScript</span></a>
               </li>
               <li class="p" id="text06"> <a href="https://github.com/dakshbhatnagar/SQLProjects"><span id="text06"
-                    style="color: #FF828A;">Structured Query Language</span></a> - (MySQL, SQLite3, Bigquery)</li>
+                    style="color: #28cacb;">Structured Query Language</span></a> - (MySQL, SQLite3, Bigquery)</li>
               <li class="p" id="text06">Advanced <a
                   href="https://docs.google.com/spreadsheets/d/14h0UCZOhi1nQx7oT7DY8SYmqp3S0Y5UssEjkGAuVgXo/edit?gid=589808745#gid=589808745"><span
-                    id="text06" style="color: #FF828A;">Google Sheets</span></a> / MS Excel </li>
+                    id="text06" style="color: #28cacb;">Google Sheets</span></a> / MS Excel </li>
               <li class="p" id="text06">BI Tools (Looker Studio / <a
                   href="https://public.tableau.com/app/profile/daksh.bhatnagar/vizzes"><span id="text06"
-                    style="color: #FF828A;">Tableau</span></a>) </li>
+                    style="color: #28cacb;">Tableau</span></a>) </li>
               <li class="p" id="text06">Google Cloud Platform (Sheets API and YouTube API, Basic) </li>
 
               </li>
@@ -2190,12 +2207,12 @@
               <a href="#skills" class="button n01" style="border-radius: 10px;">Back</a>
             </li>
           </ul>
-          <header id="text01" style="color: #FF828A;">Contact Me</header>
+          <header id="text01" style="color: #28cacb;">Contact Me</header>
           <hr>
 
 
           <p id="text09">Feel free to reach out via <a href="mailto:bhatnagar91@gmail.com"><span id="text05"
-                style="color: #FF828A;">email</span></a> and
+                style="color: #28cacb;">email</span></a> and
             I’d love to connect to explore how I can assist!</p>
 
 
@@ -2245,8 +2262,6 @@
             </li>
           </ul>
         </section>
-        <footer id="footer">
-        </footer>
       </div>
     </div>
   </div>
