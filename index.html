@@ -755,6 +755,51 @@
       margin-top: 1rem;
     }
 
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+      /* If you want dots under the hoverable text */
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 15px;
+      background-color: rgba(0, 0, 0, 0.001);
+      padding: 3px;
+    }
+
+    .grid-container>div {
+      background-color: rgba(0, 0, 0, 0.001);
+      text-align: left;
+      padding: 10px 0;
+      word-wrap: break-word;
+      /* Allows long words or URLs to wrap onto the next line */
+      word-break: break-word;
+      /* Ensures words will break appropriately if necessary */
+    }
+
     #text05 {
       color: #FFFFFF;
       font-family: 'Roboto', monospace;
@@ -2028,7 +2073,7 @@
           <ul id="buttons02" class="buttons" style="border-radius: 10px;">
             <li>
               <a href="https://drive.google.com/file/d/1BFJJV6CZ0rMiOiH5NQd90lBvHJdjvEDY/view?usp=sharing"
-                class="button n01" style="border-radius: 10px;">View resume</a>
+                class="button n01" style="border-radius: 10px;" target="_blank">View resume</a>
             </li>
             <li>
               <a href="#about" class="button n02" style="border-radius: 10px;">Next</a>
@@ -2098,37 +2143,51 @@
             </li>
           </ul>
 
-          <header id="text07" style="color: #28cacb;">Skills</header>
+          <header id="text07" style="color: #28cacb;">Skills </header>
           <hr>
-          <div id="gallery01" class="gallery">
+          <div id="gallery01" class="grid-container">
+            <div class="grid-item" id="text06">1. Programming
+              <div class="p" id="text06"><a href="https://github.com/dakshbhatnagar/projects" target="_blank"><span
+                    id="text06" style="color: #28cacb;">Python</span></a>
+                (Pandas, Numpy, Seaborn, Matplotlib) and <a
+                  href="https://script.google.com/home/projects/1BlweW8e_LL9qsqH551LUVVj6kIwjHnmspj0uEurKgfQQFAy-C0pYOf2z/edit"
+                  target="_blank"><span id="text06" style="color: #28cacb;">Google AppScript</span></a></div>
+            </div>
+            <div class="grid-item" id="text06">2. Structured Query
+              Language
+              <div class="p" id="text06"><a href="https://github.com/dakshbhatnagar/SQLProjects" target="_blank"
+                  rel="noopener noreferrer"><span id="text06" style="color: #28cacb;">SQL</span></a> - (MySQL, SQLite3,
+                Bigquery)</div>
+            </div>
 
-            <p id="text06">
-              <li class="p" id="text06">Programming - <a href="https://github.com/dakshbhatnagar/projects"><span
-                    id="text06" style="color: #28cacb;">Python</span></a> (Pandas, Numpy, Seaborn, Matplotlib) and
-                <a
-                  href="https://script.google.com/home/projects/1BlweW8e_LL9qsqH551LUVVj6kIwjHnmspj0uEurKgfQQFAy-C0pYOf2z/edit"><span
-                    id="text06" style="color: #28cacb;">Google AppScript</span></a>
-              </li>
-              <li class="p" id="text06"> <a href="https://github.com/dakshbhatnagar/SQLProjects"><span id="text06"
-                    style="color: #28cacb;">Structured Query Language</span></a> - (MySQL, SQLite3, Bigquery)</li>
-              <li class="p" id="text06">Advanced <a
-                  href="https://docs.google.com/spreadsheets/d/14h0UCZOhi1nQx7oT7DY8SYmqp3S0Y5UssEjkGAuVgXo/edit?gid=589808745#gid=589808745"><span
-                    id="text06" style="color: #28cacb;">Google Sheets</span></a> / MS Excel </li>
-              <li class="p" id="text06">BI Tools (Looker Studio / <a
-                  href="https://public.tableau.com/app/profile/daksh.bhatnagar/vizzes"><span id="text06"
-                    style="color: #28cacb;">Tableau</span></a>) </li>
-              <li class="p" id="text06">Google Cloud Platform (<span id="text06" style="color: #28cacb;">Sheets
-                  API</span> and <span id="text06" style="color: #28cacb;">YouTube API</span>, Basic) </li>
+          </div>
 
-              </li>
-            </p>
+          <div id="gallery01" class="grid-container">
+            <div class="grid-item" id="text06">3. Spreadsheets
+              <div class="p" id="text06">Advanced <a
+                  href="https://docs.google.com/spreadsheets/d/14h0UCZOhi1nQx7oT7DY8SYmqp3S0Y5UssEjkGAuVgXo/edit?gid=589808745#gid=589808745"
+                  target="_blank"><span id="text06" style="color: #28cacb;">Google Sheets</span></a> / MS Excel</div>
+            </div>
+            <div class="grid-item" id="text06">4. BI Tools
+              <div class="p" id="text06">Looker Studio / <a
+                  href="https://public.tableau.com/app/profile/daksh.bhatnagar/vizzes" target="_blank"><span id="text06"
+                    style="color: #28cacb;">Tableau</span></a></div>
+            </div>
+          </div>
+          <div id="gallery01" class="grid-container">
+            <div class="grid-item" id="text06">5. Cloud Platform
+              <div class="p" id="text06">Google Cloud Platform (<span id="text06" style="color: #28cacb;">Sheets API
+                  and <span id="text06" style="color: #28cacb;">YouTube API, Basic</span></span>)</div>
+            </div>
 
-            <ul id="buttons02" class="buttons">
+          </div>
 
-              <li>
-                <a href="#contact" class="button n02" style="border-radius: 15px;">Next</a>
-              </li>
-            </ul>
+          <ul id="buttons02" class="buttons">
+
+            <li>
+              <a href="#contact" class="button n02" style="border-radius: 15px;">Next</a>
+            </li>
+          </ul>
         </section>
 
         <section id="contact-section">
@@ -2148,7 +2207,7 @@
 
           <ul id="icons01" class="icons">
             <li>
-              <a class="n01" href="https://github.com/dakshbhatnagar">
+              <a class="n01" href="https://github.com/dakshbhatnagar" target="_blank">
                 <svg aria-labelledby="icon-title">
                   <title id="icon-title">GitHub</title>
                   <use xlink:href="#icon-8c4b37645de3c276d895d87df51ba614"></use>
@@ -2157,7 +2216,7 @@
               </a>
             </li>
             <li>
-              <a class="n02" href="https://www.linkedin.com/in/dakshb/">
+              <a class="n02" href="https://www.linkedin.com/in/dakshb/" target="_blank">
                 <svg aria-labelledby="icon-title">
                   <title id="icon-title">LinkedIn</title>
                   <use xlink:href="#icon-bf393d6ea48a4e69e1ed58a3563b94a5"></use>
@@ -2166,7 +2225,8 @@
               </a>
             </li>
             <li>
-              <a class="n03" href="https://drive.google.com/file/d/1M2PYWuYh-p8yFBJ5ta00iKHO1tDZieJy/view?usp=sharing">
+              <a class="n03" href="https://drive.google.com/file/d/1M2PYWuYh-p8yFBJ5ta00iKHO1tDZieJy/view?usp=sharing"
+                target="_blank">
                 <svg aria-labelledby="icon-title">
                   <title id="icon-title">CV</title>
                   <use xlink:href="#icon-396f473e8a8386b5ca989ade22d6ada7"></use>
@@ -2175,7 +2235,7 @@
               </a>
             </li>
             <li>
-              <a class="n04" href="https://bhatnagar91.medium.com">
+              <a class="n04" href="https://bhatnagar91.medium.com" target="_blank">
                 <svg aria-labelledby="icon-title">
                   <title id="icon-title">Medium</title>
                   <use xlink:href="#icon-7ba57a956e94fa64bf7f65dd78b6b627"></use>
