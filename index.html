@@ -756,33 +756,6 @@
       margin-top: 1rem;
     }
 
-    .tooltip {
-      position: relative;
-      display: inline-block;
-      border-bottom: 1px dotted black;
-      /* If you want dots under the hoverable text */
-    }
-
-    /* Tooltip text */
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      width: 120px;
-      background-color: black;
-      color: #fff;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-
-      /* Position the tooltip text - see examples below! */
-      position: absolute;
-      z-index: 1;
-    }
-
-    /* Show the tooltip text when you mouse over the tooltip container */
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
-    }
-
     .grid-container {
       display: grid;
       grid-template-columns: auto auto auto auto;
@@ -790,6 +763,8 @@
       background-color: rgba(0, 0, 0, 0.001);
       padding: 3px;
     }
+
+
 
     .grid-container>div {
       background-color: rgba(0, 0, 0, 0.001);
@@ -866,35 +841,6 @@
       margin-top: 1rem;
     }
 
-    #text08 {
-      text-decoration: none;
-      color: #3391a6;
-      font-family: 'Roboto', monospace;
-      font-size: 0.75em;
-      line-height: 1.75;
-      font-weight: 400;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      margin-block: 1rem;
-    }
-
-    #text08 a {
-      color: #3391a6;
-      font-family: 'Roboto', monospace;
-      font-size: 1em;
-      line-height: 1.75;
-      font-weight: 400;
-
-    }
-
-    #text08 a:hover {
-      text-decoration: none;
-    }
-
-    #text08 span.p:nth-child(n + 2) {
-      margin-top: 1rem;
-    }
-
     #text01 {
       color: #FFFFFF;
       font-family: 'Roboto', monospace;
@@ -918,7 +864,7 @@
     #text09 {
       color: #FFFFFF;
       font-family: 'Roboto', monospace;
-      font-size: 1em;
+      font-size: 0.75rem;
       line-height: 1.75;
       font-weight: 400;
     }
@@ -1015,14 +961,19 @@
 
     #buttons02 .button {
       color: #FFFFFF;
-      border: solid 1px #ffff;
+      border: solid 0.9px #ffff;
       float: center;
-      padding: 0 1.2rem
+      padding: 0 1rem;
+      flex-wrap: wrap;
     }
+
+    /* RGB Code for Transparent color : rgba(0, 0, 0, 0.001) */
 
     #buttons02 .button:hover {
       border-color: #28cacb !important;
       color: #28cacb !important;
+      transform: scale(1.2);
+
     }
 
     #buttons01 {
@@ -1714,9 +1665,11 @@
         width: 100%;
         font-size: 1em;
         line-height: 1.75;
+
       }
 
       #text06:hover {
+
         transform: scale(1.1);
         transition: transform 0.3s ease-in-out, color 0.25s ease, background-color 0.25s ease, border-color 0.5s ease;
       }
@@ -1726,13 +1679,6 @@
         width: 100%;
         font-size: 1.5em;
         line-height: 1.375;
-      }
-
-      #text08 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 1em;
-        line-height: 1.75;
       }
 
       #text01 {
@@ -1907,10 +1853,6 @@
         font-size: 1.5em;
       }
 
-      #text08 {
-        font-size: 1em;
-      }
-
       #text01 {
         font-size: 1.5em;
       }
@@ -2024,7 +1966,7 @@
           </div>
           <header id="text03" style="color: #28cacb;">Daksh Bhatnagar</header>
           <hr>
-          <p id="text02">Tangible results-driven <span id="text06" style="color: #28cacb;">Data Analyst</span> with 2.5+
+          <p id="text06">Tangible results-driven <span id="text06" style="color: #28cacb;">Data Analyst</span> with 2.5+
             years of experience driving
             business growth
             in HR Consulting, Ed-tech & Fin-tech industry using data.</p>
@@ -2057,7 +1999,8 @@
           <p id="text06">
             <span class="p" style="text-align: justify;">Hi, I’m Daksh Bhatnagar, a data analyst based out of New
               Delhi with <span id="text05" style="color: #28cacb;">2.5+ years of experience</span> in analytics and a
-              masters in finance. </span>
+              MBA in Finance and Marketing. </span>
+            <br>
 
             <span class="p" style="text-align: justify;">I’m passionate about helping businesses uncover valuable
               insights through
@@ -2065,6 +2008,7 @@
                 style="color: #28cacb;">delivering actionable insights</span>
               that drive smarter decisions while implementing automated reporting solutions that save both
               time and costs.</span>
+            <br>
             <span class="p" style="text-align: justify;">Over the years, I’ve nurtured my skills in developing
               dashboards and reports that <span id="text05" style="color: #28cacb;">enhance
                 efficiency and improve processes</span>, creating significant value for the
@@ -2080,8 +2024,6 @@
               <a href="#about" class="button n02" style="border-radius: 10px;">Next</a>
             </li>
           </ul>
-
-
 
         </section>
         <section id="about-section">
@@ -2197,6 +2139,7 @@
               <a href="#skills" class="button n02" style="border-radius: 10px;">Back</a>
             </li>
           </ul>
+
           <header id="text07" style="color: #28cacb;">Contact Me</header>
           <hr>
 
@@ -2252,6 +2195,13 @@
               <a href="#home" class="button n02" style="border-radius: 10px;">Home</a>
             </li>
           </ul>
+          <br>
+          <footer style="text-align: center; padding: 20px; background-color: rgba(0, 0, 0, 0.001); margin-top: 20px;">
+            <span id="text09" style="color: #28cacb; font-size: 14px;">
+              &copy; 2024 Daksh Bhatnagar | All rights reserved
+            </span>
+          </footer>
+
         </section>
       </div>
     </div>
