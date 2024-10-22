@@ -636,12 +636,12 @@
     .image .frame img {
       width: 100px;
       height: 100px;
-      border-radius: 50%;
+      border-radius: 40%;
       object-fit: cover;
     }
 
     .image.full .frame {
-      display: block;
+      display: var(--flex-alignment);
     }
 
     .image.full:first-child .frame {
@@ -773,6 +773,8 @@
       /* Allows long words or URLs to wrap onto the next line */
       word-break: break-word;
       /* Ensures words will break appropriately if necessary */
+      color: #FFFFFF;
+      /* Set the text color to white */
     }
 
     #text05 {
@@ -1991,7 +1993,7 @@
               <a href="#home" class="button n02" style="border-radius: 10px;">Back</a>
             </li>
           </ul>
-          <header id="text05" style="color: #28cacb;">About Me</header>
+          <header id="text05" style="color: #28cacb;">About me</header>
           <hr>
           <div id="image01" class="image">
           </div>
@@ -2187,7 +2189,7 @@
               </a>
             </li>
             <li>
-              <a class="n03" href="https://drive.google.com/file/d/1T_ECWEI572Tp9Wsu7W_HvYZVtc2V4D2I/view?usp=sharing"
+              <a class="n03" href="https://drive.google.com/file/d/1vMeMSfpfOp5g9ngIN3teWe1NcD0LoiLo/view?usp=sharing"
                 target="_blank">
                 <svg aria-labelledby="icon-title">
                   <title id="icon-title">Resume</title>
@@ -2215,7 +2217,7 @@
           </ul>
           <br>
           <footer style="text-align: center; padding: 20px; background-color: rgba(0, 0, 0, 0.001); margin-top: 20px;">
-            <span id="text09" style="color: #28cacb; font-size: 14px;">
+            <span id="text09" style="color: #FFFFFF; font-size: 14px;">
               &copy; 2024 Daksh Bhatnagar | All rights reserved
             </span>
           </footer>
